@@ -1,0 +1,52 @@
+import { Tabs } from "expo-router";
+import TabBarIcon from "@/components/navigation/TabBarIcon ";
+
+export default function TabLayout() {
+  return (
+    <Tabs screenOptions={{
+        headerShown: true,
+        headerTitleAlign: "center",
+        headerStyle: {
+            backgroundColor: "#b1a9ff"
+        },
+        tabBarLabelStyle: {fontSize: 14, fontWeight: "bold", color: "black"},
+        tabBarStyle:  {
+            backgroundColor: "white",
+            height: 90,
+            marginBottom: 0,
+            paddingTop: 5,
+        },
+        tabBarActiveTintColor: "black",
+        tabBarInactiveBackgroundColor: "white",
+    }}>
+    <Tabs.Screen name="index" options={{
+        title: "Home",
+        tabBarIcon: ({color, focused}) =>(
+            <TabBarIcon name="home" color={color} />
+            
+        ),
+      }} 
+    />
+    
+    <Tabs.Screen name="(admin)" options={{
+        title: "Admin",
+        tabBarIcon: ({color, focused}) =>(
+            <TabBarIcon name="user" color={color} />
+            
+        ),
+      }} 
+    />
+
+<Tabs.Screen name="Contact" options={{
+        title: "contact",
+        tabBarIcon: ({color, focused}) =>(
+            <TabBarIcon name="phone" color={color} />
+            
+        ),
+      }} 
+    />
+
+    </Tabs>
+  )
+}
+
