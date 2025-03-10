@@ -37,8 +37,9 @@ export default function TabLayout() {
       }} 
     />
 
-<Tabs.Screen name="Contact" options={{
-        title: "contact",
+<Tabs.Screen 
+        name="contact" options={{
+        title: "Contact",
         tabBarIcon: ({color, focused}) =>(
             <TabBarIcon name="phone" color={color} />
             

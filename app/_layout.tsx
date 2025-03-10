@@ -15,6 +15,16 @@ export default function Rootlayout() {
         <Stack.Screen name="index" options={{title: "Home"}}/>
         <Stack.Screen name="contact" options={{title: "Home"}}/>
         <Stack.Screen name="+not-found" options={{title: "Not Found"}}/>
+        <Stack.Screen 
+          name="textinputdemo" 
+          options={{title: "From", headerShown: true}}/>
+          <Stack.Screen 
+          name="switchdemo" 
+          options={{title: "Switch", headerShown: true}}/>
+          <Stack.Screen 
+          name="flatlist" 
+          options={{title: "Flat", headerShown: true}}/>
+
     </Stack>
   )
 }
